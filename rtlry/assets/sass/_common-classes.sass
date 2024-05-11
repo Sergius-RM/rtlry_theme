@@ -1,0 +1,403 @@
+@font-face
+    font-family: 'Rival Sans'
+    src: url('/wp-content/themes/rtlry/assets/fonts/Rival_Sans/rivalsans-regular.otf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Inter'
+    src: url('/wp-content/themes/rtlry/assets/fonts/Inter/Inter-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Montserrat'
+    src: url('/wp-content/themes/rtlry/assets/fonts/Montserrat/Montserrat-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Montserrat Bold'
+    src: url('/wp-content/themes/rtlry/assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Work Sans'
+    src: url('/wp-content/themes/rtlry/assets/fonts/Work_Sans/WorkSans-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Mukta Malar'
+    src: url('/wp-content/themes/rtlry/assets/fonts/Mukta_Malar/MuktaMalar-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+body
+    color: $base-color
+    font-family: $font-texts
+    font-size: $footer-h-fonts
+    line-height: $lh-p
+h1, h2, h3, h4 ,h5, h6
+    color: $seconday-color
+    font-weight: 700
+h1
+  line-height: $lh-1
+  font-size: $h1-size
+  font-family: $font-texts-bold
+h2
+  line-height: $lh-1
+  font-size: $h2-size
+  font-family: $font-texts-bold
+h3
+  line-height: $lh-2
+  font-size: $h3-size
+  font-family: $font-texts-bold
+h4
+  line-height: $lh-3
+  font-size: $h4-size
+  font-family: $font-texts
+h5
+  line-height: $lh-3
+  font-size: $h5-size
+  font-family: $font-texts
+h6
+  line-height: $lh-3
+  font-size: $h6-size
+  font-family: $font-texts
+p
+  line-height: $lh-p
+  color: $base-color
+.container
+    max-width: 1200px
+.darkmode
+    color: #fff
+    a
+        color: #fff
+.lightmode
+    color: #3F3F3F
+    background: #fff
+    a
+        color: #3F3F3F
+.is_onmobile
+    display: none
+.no_mobile
+    display: contents
+svg
+    -webkit-background-clip: text
+body.search
+  margin-right: 0
+header
+    padding: 20px 80px
+    a
+        color: #1A1A1A
+        text-decoration: none
+    .custom-logo
+        width: 170px
+        height: auto
+    .site-branding
+        justify-content: space-between
+        .header_contacts
+            .physical_adress
+                margin-right: 30px
+                font-size: 12px
+        i
+            color: $orange-color
+            margin-right: 10px
+            font-size: 21px
+    .physical_adress
+        max-width: 220px
+    .email_adress
+        height: 40px
+        width: fit-content
+        font-size: 12px
+.lightmode
+    .site-navigation
+        a
+            color: #3F3F3F
+    .header-logo-darkmode
+        display: none
+    .header-logo-lightmode
+        display: block
+.darkmode
+    .site-navigation
+        a
+            color: #fff
+.header_area.darkmode
+    position: absolute
+    width: 100%
+    z-index: 9999
+.sub_header
+    justify-content: space-between
+.search
+    position: relative
+    margin-right: 30px
+    .search-field
+        padding: 5px 15px
+        border: 0
+        margin-right: 0px
+        &::placeholder
+            opacity: 0.25
+    .search-submit
+        background: url(/wp-content/themes/rtlry/assets/images/icons/search.svg) 50% 50% no-repeat
+        background-size: contain
+        font-size: 0
+        width: 25px
+        height: 29px
+        background-color: #fff
+        border: 0
+        position: absolute
+.site-navigation
+    width: 100%
+    .shop_btn
+        display: inline-block
+        float: right
+        top: -5px
+        position: relative
+        +btn-option
+        &:hover
+            +btn-option-hover
+        a
+            color: #333
+            font-weight: 600
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            &:hover
+                border-bottom: 0
+                padding-bottom: 0
+    ul
+        margin-bottom: 0
+        padding: 0
+        li
+            display: inline-block
+            padding: 5px 4vw
+            &:first-child
+                padding-left: 15px
+            &:last-child
+                padding-right: 15px
+            a
+                text-decoration: none
+                color: #1A1A1A
+                font-family: $font-texts
+                &:hover
+                    +link-hover
+.navbar-toggler-icon
+    // position: absolute
+    // right: 200px
+    // top: 160px
+    margin-top: 20px
+    margin-right: 20px
+.mob_menu
+    +.show
+    background: #000000e6
+    padding: 40px
+    position: absolute
+    width: 100%
+    z-index: 999
+    margin-top: 75px
+    .site-navigation
+    ul
+        padding: 0
+        li
+            display: block
+            padding: 25px 15px
+            list-style: none
+            a
+                text-decoration: none
+                color: #fff
+                font-family: $font-texts
+                width: 100%
+                font-size: 22px
+        .shop_btn
+            float: none
+            width: 75%
+            margin: 0 auto
+            background: #fff
+            padding: 15px 20px
+            font-weight: 600
+            background: $primary-color
+            border-radius: 30px
+            a
+                color: $seconday-color
+.blog-banner
+    img
+        width: 100%
+        height: 50vh
+        object-fit: cover
+.cta_btn
+    +cta-btn
+    margin-bottom: 10px
+    display: inline-block
+    width: fit-content
+    &:hover
+        +cta-btn-hover
+.lost_page
+    .container
+        margin-top: 100px
+        margin-bottom: 150px
+    h1
+        font-size: 300px
+        color: #DEDEDE
+        font-weight: 900
+        text-align: center
+        line-height: 363px
+    h2
+        font-weight: 700
+        font-size: 36px
+        line-height: 44px
+        text-align: center
+        color: #132E42
+        line-height: 44px
+        margin-bottom: 50px
+    .cta_btn
+        display: block
+        margin-bottom: 50px
+        padding: 20px 60px
+        &::after
+            display: none
+    .lost_search
+        padding: 60px 0 80px 0
+        background: $primary-color
+        h6
+            color: #fff
+            margin-bottom: 50px
+            font-weight: 300
+        .search
+            .search-field
+                padding: 15px 15px
+            .search-submit
+                background-size: inherit
+                font-size: 0
+                width: 45px
+                height: 49px
+footer
+    +footer-fonts
+    .custom-logo
+        margin-bottom: 12px
+        width: 180px
+        height: auto
+    h3
+        color: $primary-color
+        font-family: $footer-h-fonts
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+    a
+        +link-light
+        font-family: $link-fonts
+        &:hover
+            border-bottom: 0
+            color: $orange-color
+    .site-branding
+        div
+            margin-bottom: 10px
+    .footer_contacts
+        a
+            display: block
+            margin-bottom: 9px
+        i
+            color: $orange-color
+            margin-right: 10px
+            font-size: 16px
+            float: left
+        p
+            color: $light-color
+        .physical_adress
+            display: flex
+    .footer_socials
+        a
+            font-size: 24px
+            margin-right: 10px
+    .footer_ordering
+        a
+            +btn-option
+            margin-top: 15px
+            display: inline-block
+            &:hover
+                +btn-option-hover
+                color: #fff
+                text-decoration: none
+    .footer_nav
+        ul
+            padding: 0
+            list-style: none
+            li
+                line-height: $lh-4
+.footer_copyright
+    height: 50px
+    background: $primary-color
+    color: $light-color
+    padding: 0 103px
+    .row
+        height: 100%
+.order_section
+    margin-bottom: 100px
+    .order_content
+        margin-bottom: 50px
+    .order_form
+        background: $seconday-color
+        border-radius: 19px
+        padding: 50px 65px
+        label
+            color: #fff
+        h4
+            color: #fff
+            font-weight: 700
+            font-size: $h5-size
+            line-height: $lh-4
+            margin-bottom: 20px
+        input[type=text]
+            margin-bottom: 25px !important
+            border: 1px solid #B3B3B3
+            border-radius: 20px
+            padding: 10px 20px !important
+            color: #B3B3B3
+        .gform_button
+            padding: 8px 30px
+            background: $primary-color
+            border-radius: 30px
+            color: $seconday-color
+            border: 0
+            margin: 0 auto
+            font-weight: 600
+        .gfield_radio
+            text-align: left
+            display: flex
+            margin-bottom: 25px
+            div
+                display: inline-block
+                margin-right: 20px
+            .gfield-choice-input+label
+                max-width: none
+        .gform_fileupload_rules, .gform_drop_instructions
+            display: none
+        #field_2_8, #field_2_9
+            display: flex
+            background: #fff
+            border-radius: 24px
+            padding: 10px 20px !important
+            text-align: left
+            margin-bottom: 25px
+            .gfield_description
+                color: #757575
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+                padding: 0
+        .ginput_container_fileupload
+            input #file-upload-button
+                background: #333 !important
+                padding: 20px !important
+                display: block
+        .gform_drop_area
+            padding: 0
+            margin-bottom: 0
+            button
+                background: url(/wp-content/themes/rtlry/assets/images/Download.png) 50% 50% no-repeat
+                font-size: 0
+                border: 0
+                padding: 10px 10px
+                width: 10pxpx
+                height: 10px
+.site-footer
+    background-color: $primary-dark
+    padding: 54px 103px

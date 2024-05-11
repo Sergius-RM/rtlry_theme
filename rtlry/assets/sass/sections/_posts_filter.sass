@@ -1,0 +1,48 @@
+.posts_filter_section
+    background: $seconday-color
+    padding: 60px 0
+    margin-bottom: 50px
+    .posts_filter_list
+        list-style: none
+        .post_tag, .categories
+            background: #fff
+            padding: 15px
+            color: #bebebe
+            cursor: pointer
+            position: relative
+            ul
+                text-align: left
+                position: absolute
+                padding: 0
+                left: 0
+                top: 0px
+                opacity: 0
+                transition: 0.5s
+                width: 100%
+                z-index: -1
+                list-style: none
+                a
+                    text-decoration: none
+                    color: #333
+                    width: 100%
+                    padding: 15px
+                    display: block
+                    background: #fff
+                    &:hover
+                        background: #f2f2f2
+        .post_tag:hover > ul, .categories:hover > ul
+                top: 49px
+                opacity: 1
+                transition: 0.5s
+                z-index: 1
+        .search
+            label
+                width: calc( 100% - 15px)
+            .search-field
+                padding: 15px 15px
+                width: calc( 100%)
+            .search-submit
+                background-size: inherit
+                font-size: 0
+                width: 45px
+                height: 49px

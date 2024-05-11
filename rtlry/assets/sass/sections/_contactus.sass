@@ -1,0 +1,71 @@
+.contactus_section
+    background: $primary-color
+    height: 35vw
+    background: url(/wp-content/themes/rtlry/assets/images/footer_bg_full.jpg) 100% 0% no-repeat
+    background-size: contain
+    position: relative
+    .container
+        z-index: 1000
+        position: relative
+        height: 100%
+        .row
+            height: 100%
+    .banner_overlay
+        // background-color: #00000082
+        width: 100%
+        height: 100%
+        position: absolute
+        background: linear-gradient(-260.55deg, #173951 60%, rgba(23, 57, 81, 0.3) 98.87%)
+    .section_two_columns
+        max-width: 980px
+        h2
+            font-weight: 700
+            font-size: 36px
+            line-height: 42px
+            margin-bottom: 15px
+            color: $light-color
+        h4
+            font-weight: 700
+            font-size: 16px
+            line-height: 26px
+            color: $orange-color
+        .contactus_content
+            color: $light-color
+            p
+                color: $light-color
+            .about-content
+                padding-right: 40px
+                ul
+                    +list-style
+                    li
+                        line-height: 30px
+                        a
+                            font-size: 18px
+                            color: $light-color
+                            text-decoration: none
+                            font-family: $link-fonts
+                            i
+                                color: $orange-color
+                                margin-right: 10px
+        .contactus_form
+            .gform_title
+                display: none
+            .gform_button
+                padding: 8px 30px
+                background: $base-color
+                border-radius: 30px
+                color: #fff
+                border: 0
+                margin: 0 auto
+            input, textarea, select
+                border: 0
+                padding: 10px 20px !important
+                border-radius: 5px
+                font-size: 15px
+                color: #333
+                background: #fff
+                font-family: Verdana, Tahoma, sans-serif
+            select
+                color: #333333a8
+                &::selection
+                    background: cyan
